@@ -62,7 +62,6 @@ RUN mkdir -p /var/run/sshd /var/www/upload/server/php/chroot && \
 		  >/var/www/upload/server/php/chroot/README.txt && \
 	rm -rf /var/lib/apt/lists/* /var/cache/* /tmp/* /var/tmp/* /var/www/upload/server/php/chroot/files/.gitignore /tmp/sshd_config
 
-#VOLUME [ "/var/www/upload/server/php/chroot/files" ]
 EXPOSE 80 22
 
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
